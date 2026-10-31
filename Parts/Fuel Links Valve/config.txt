@@ -1,0 +1,22 @@
+display_name=Fuel Links Valve
+version=0.2409
+cat=11
+mass=0.45
+com=0,0,0
+mirror=False
+calculate_drag=False
+icon=icon.png
+import
+{
+source=FuelLinks.obj
+mesh=FuelLinksBody
+{
+pos=0,0,0
+rot=0,0,0
+scale=1,1,1
+collider=1
+}
+}
+Resizable
+{
+}

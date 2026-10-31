@@ -1,0 +1,13 @@
+/Source/
+/src/
+/tests/
+/work/
+/build/
+/Verification/
+/ModelTools/
+/*.zip
+/Mods/FlyoutSystems.dll
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

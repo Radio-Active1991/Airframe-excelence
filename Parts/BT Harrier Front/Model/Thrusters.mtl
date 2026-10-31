@@ -1,0 +1,29 @@
+newmtl Shell
+Kd 0.5608 0.5961 0.6196
+Ks .15 .15 .15
+Ns 45
+d 1
+
+newmtl Inner
+Kd 0.1843 0.2118 0.2275
+Ks .15 .15 .15
+Ns 45
+d 1
+
+newmtl Mount
+Kd 0.3686 0.4078 0.4353
+Ks .15 .15 .15
+Ns 45
+d 1
+
+newmtl Vane
+Kd 0.6667 0.7020 0.7176
+Ks .15 .15 .15
+Ns 45
+d 1
+
+newmtl Bolt
+Kd 0.3020 0.3216 0.3373
+Ks .15 .15 .15
+Ns 45
+d 1

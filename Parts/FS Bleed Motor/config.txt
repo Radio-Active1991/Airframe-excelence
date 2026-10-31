@@ -1,0 +1,25 @@
+display_name=FS Bleed Motor
+version=0.2409
+cat=3
+mass=40
+com=0,0,0
+mirror=False
+calculate_drag=False
+icon=icon.png
+import
+{
+source=Drives.obj
+mesh=FSDriveBody
+{
+pos=0,0,0
+rot=0,-90,0
+scale=1,1,1
+collider=1
+}
+}
+Resizable
+{
+}
+OutputShaft
+{
+}

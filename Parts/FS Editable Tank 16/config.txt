@@ -1,0 +1,7 @@
+# Flyout Systems DLL clones the native editable fuselage prefab.
+# Native FuelTank behavior, derived removable end caps.
+display_name=FS Editable Tank 16
+version=0.2409
+cat=1
+mass=10
+icon=icon.png

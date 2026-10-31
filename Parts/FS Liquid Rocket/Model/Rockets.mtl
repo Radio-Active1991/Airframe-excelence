@@ -1,0 +1,30 @@
+newmtl Metal0
+Kd 0.41176 0.41961 0.43922
+Ks .4 .4 .4
+Ns 70
+d 1
+
+newmtl Metal1
+Kd 0.66667 0.68235 0.70196
+Ks .4 .4 .4
+Ns 70
+d 1
+
+newmtl Metal2
+Kd 0.23922 0.20784 0.17255
+Ks .4 .4 .4
+Ns 70
+d 1
+
+newmtl Metal3
+Kd 0.39216 0.41176 0.43529
+Ks .4 .4 .4
+Ns 70
+d 1
+
+newmtl Metal4
+Kd 0.13725 0.14902 0.16471
+Ks .4 .4 .4
+Ns 70
+d 1
+

@@ -1,0 +1,17 @@
+newmtl Body
+Kd 0.2314 0.2824 0.3098
+Ks 0.1 0.1 0.1
+Ns 30
+d 1
+
+newmtl Metal
+Kd 0.6118 0.6510 0.6706
+Ks 0.1 0.1 0.1
+Ns 30
+d 1
+
+newmtl Accent
+Kd 0.8353 0.5922 0.1569
+Ks 0.1 0.1 0.1
+Ns 30
+d 1

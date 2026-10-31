@@ -1,0 +1,22 @@
+display_name=Motor Gearbox
+version=0.2504
+cat=3
+mass=15
+com=0,0,0
+mirror=False
+calculate_drag=False
+icon=icon.png
+import
+{
+source=MotorGearbox.obj
+mesh=FSMotorGearbox
+{
+pos=0,0,0
+rot=0,-90,0
+scale=1,1,1
+collider=1
+}
+}
+Resizable
+{
+}
