@@ -2,9 +2,9 @@
 
 Aircraft systems, propulsion, procedural wing devices and graphical controllers for **Flyout**.
 
-**Current release: 0.11.9** · **Flyout 0.2504** · **MelonLoader 0.7.1 Open-Beta** · **Windows x64 / .NET 6**
+**Current release: 0.11.9** Â· **Flyout 0.2504** Â· **MelonLoader 0.7.1 Open-Beta** Â· **Windows x64 / .NET 6**
 
-[Download the release](https://github.com/Radio-Active1991/Airframe-excelence/releases/latest) · [Read the Wiki](https://github.com/Radio-Active1991/Airframe-excelence/wiki) · [Report an issue](https://github.com/Radio-Active1991/Airframe-excelence/issues)
+[Download the release](https://github.com/Radio-Active1991/Airframe-excelence/releases/latest) Â· [Read the Wiki](https://github.com/Radio-Active1991/Airframe-excelence/wiki) Â· [Report an issue](https://github.com/Radio-Active1991/Airframe-excelence/issues)
 
 ## What is included?
 
@@ -29,11 +29,6 @@ The package contains **21 placeable parts**. Extra wing, turbine-nozzle and pist
 
 MelonLoader is installed separately. The game and user-data folders are different destinations: [full installation guide](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Installation).
 
-### Updating from Flyout Systems
-
-Remove **FlyoutSystems.dll** before installing **AirframeExcelence.dll**. Do not load both, or obsolete standalone FuelLinks/BleedThrusters copies, together.
-
-Keep the internal **Mods/FlyoutSystems/Textures** directory and the existing part-folder names. Their legacy names are intentional compatibility identifiers. Saved aircraft and settings remain compatible.
 
 ## Documentation
 
@@ -43,7 +38,7 @@ Aircraft still require correct control directions, adequate propulsion/supply an
 
 ## License and source
 
-**GPL-3.0** — see [LICENSE](LICENSE). The main repository contains finished runtime files and documentation. Each release also includes a separately downloadable **matching Source ZIP** with the mod source, build scripts, tests and asset tools. It is available beside the runtime ZIP at no additional charge.
+**GPL-3.0** â€” see [LICENSE](LICENSE). The main repository contains finished runtime files and documentation. Each release also includes a separately downloadable **matching Source ZIP** with the mod source, build scripts, tests and asset tools. It is available beside the runtime ZIP at no additional charge.
 
 Do not install the Source ZIP into the game. Use the named runtime ZIP for installation. Flyout, MelonLoader and native game assets are not redistributed.
 
