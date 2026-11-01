@@ -2,7 +2,7 @@
 
 Aircraft systems, propulsion, procedural wing devices and graphical controllers for **Flyout**.
 
-**Current release: 0.11.9** · **Flyout 0.2504** · **MelonLoader 0.7.1 Open-Beta** · **Windows x64 / .NET 6**
+**Current release: 0.11.10** · **Flyout 0.2504** · **MelonLoader 0.7.1 Open-Beta** · **Windows x64 / .NET 6**
 
 [Download the release](https://github.com/Radio-Active1991/Airframe-excelence/releases/latest) · [Read the Wiki](https://github.com/Radio-Active1991/Airframe-excelence/wiki) · [Report an issue](https://github.com/Radio-Active1991/Airframe-excelence/issues)
 
@@ -19,16 +19,21 @@ The package contains **21 placeable parts**. Extra wing, turbine-nozzle and pist
 
 ## Installation
 
-1. Close Flyout and download **Airframe-Excelence-0.11.9.zip** from Releases.
+1. Close Flyout and download **Airframe-Excelence-0.11.10.zip** from Releases.
 2. Copy the package's **Mods** contents into the game's **Mods** directory.
 3. Copy the 21 folders under **Parts** into:
 
    `%USERPROFILE%\AppData\LocalLow\Stonext Games\Flyout\Mods\Parts`
 
-4. Start Flyout and check for **Airframe Excelence 0.11.9** in the log.
+4. Start Flyout and check for **Airframe Excelence 0.11.10** in the log.
 
 MelonLoader is installed separately. The game and user-data folders are different destinations: [full installation guide](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Installation).
 
+## New in 0.11.10
+
+Choose Collective as the Stability Assist climb input while controlling jet throttle independently. Configure nozzle-ready activation delay, angular-acceleration limits and a one-time transition-completion action. Sequence outputs can be held or released; Logic can write the main flight, trim and throttle controls.
+
+This update also fixes piston cases disappearing after a test drive, honors Unlimited Fuel for rockets/RCS, and reduces repeated work in hover control and wing updates. See [Release notes](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Release-Notes) and [Performance](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Performance-and-Compatibility).
 
 ## Documentation
 
@@ -42,4 +47,4 @@ Aircraft still require correct control directions, adequate propulsion/supply an
 
 Do not install the Source ZIP into the game. Use the named runtime ZIP for installation. Flyout, MelonLoader and native game assets are not redistributed.
 
-Created by **Radio-Active1991**. Previously named **Flyout Systems**.
+Created by **Radio-Active1991**, with development, debugging and documentation assistance from **OpenAI ChatGPT / Codex**. Previously named **Flyout Systems**.
