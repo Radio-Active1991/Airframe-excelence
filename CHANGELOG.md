@@ -1,5 +1,20 @@
 # Release notes
 
+## 0.11.11 — Smoothing, formulas, suspension and performance
+
+- Added a **Smoothing** processing gate with configurable maximum change in units/second and an initial output. It limits changes in both directions using elapsed simulation time.
+- Added an **Equation** processing gate with four inputs, editable formulas, arithmetic, functions and simulation-time variables. Syntax errors appear in the editor; invalid arithmetic releases the affected output. Formulas compile on load/apply rather than being parsed during physics ticks.
+- Kept the existing limits of 15 processing gates, 64 additional inputs and 3 outputs. Existing graphs retain their gate IDs and settings; graphs using the new gates require 0.11.11 or newer.
+- Added **Mass multiplier** (0.1–100, default 1) to Spring Bearing, Spring Damper and Linear Servo. It changes real part/vehicle mass, with native inertia recalculated on launch.
+- Corrected Spring Bearing's asymmetric angular-stop mapping, including mirrored parts. Displayed angles, rest targets and physical limits now use consistent signs. Existing asymmetric setups may need their travel checked again.
+- Expanded editor damping to **1,000 kN·m·s/deg** for Spring Bearing and **1,000 kN·s/m** for Spring Damper; retained saved values and defaults. Expanded flight information for suspension tuning.
+- Reduced repeated graph dependency work, duplicate compilation during Apply, per-frame mechanical/nozzle snapshot allocations and editor node/palette lookups. Mechanical, bleed-nozzle, rocket and motor/CVT information text refreshes at 10 Hz; physics and actuator timing remain active.
+- Updated the English Wiki with formulas, examples, reset/error behavior, suspension setup and troubleshooting.
+
+The author confirmed the tested features in-game before publication. Offline logic/extension/native-axis/device suites passed **10,784 assertions**. A mixed maximum-size graph completed 100,000 evaluations in about 48 ms with zero managed bytes allocated in its evaluation loop; cached snapshot reads also allocated zero bytes after warm-up. These are isolated offline checks, **not a new game FPS measurement**. Compatibility audits passed 85 native hooks and 6,155 reachable Unity wrapper calls with no unavailable paths.
+
+Download the runtime ZIP for installation. The separate **Source ZIP** contains the matching GPL-3.0 source, build scripts, tests and authored asset tools. Development, debugging and documentation assistance: **OpenAI ChatGPT / Codex**.
+
 ## 0.11.10 — Controller options, engine fixes and performance
 
 - Added independent native Collective/Throttle lift input and output selection, plus separate custom lift axes. Corrected Collective input so climb/descent requests reach the assistant.
