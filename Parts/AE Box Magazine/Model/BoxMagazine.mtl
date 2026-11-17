@@ -1,0 +1,14 @@
+newmtl AEBoxBody
+Kd 0.61 0.68 0.72
+Ks 0.25 0.25 0.25
+Ns 40
+
+newmtl AEBoxLid
+Kd 0.23 0.3 0.35
+Ks 0.25 0.25 0.25
+Ns 40
+
+newmtl AEBoxHardware
+Kd 0.72 0.77 0.8
+Ks 0.25 0.25 0.25
+Ns 40

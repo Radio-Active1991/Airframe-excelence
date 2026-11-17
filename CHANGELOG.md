@@ -1,5 +1,25 @@
 # Release notes
 
+## 0.11.12 — Missiles, magazines, weapon controls and performance
+
+- Added **AE Missile RCS**, a round missile module with 12 flush steering ports and short gas-jet effects. Pitch/yaw/roll force couples work at the nose or tail. Choose internal fuel, missile fuel, or missile fuel first with internal fallback.
+- Integrated liquid rockets with native **Missile Cores**, launch stages, guidance, local missile fuel and the native force/mass phase. Added the read-only **Next missile core ID** Logic input; `-1` means none is available in the selected weapon group.
+- Corrected excessive rocket drag caused by replacing an assembled missile's native aerodynamic exposure. Applied the requested additional drag factors: **0.80 for liquid rockets** and **0.35 for the new Missile RCS ring**. The older single RCS thruster retains its own drag.
+- Liquid-rocket effective Isp and fuel consumption now account for high-energy stock fuels, including Nuclear Propulsion. The energy factor is based on the square root of specific energy relative to 43 MJ/kg. This is a simplified game-fuel model with unlimited oxidizer, not a reactor or full propellant-chemistry simulation. The Missile RCS ring uses its explicitly configured Isp instead.
+- Fixed custom bleed nozzles and the bleed motor/compressor to **air system 0** and removed that selector. Old saved air-system choices are ignored; axis mixes and other saved settings remain intact.
+- Extended stock **Gun and Drum Mag caliber to 5–160 mm**, **Gun maximum fire rate to 15,000 RPM**, and **maximum barrel length to 10 m**. The stock minimum fire rate is retained.
+- Added **AE Box Magazine**: capacity is rows × columns × layers, with up to **200 rows, 1,000 columns and 10 layers**. Dimensions and approximate mass follow caliber and layout. It exposes a real native magazine module for stock weapons and compatible ammo readers, including the tested Cockpit path.
+- Twin guns alternate their actual muzzles. Guns with three or more barrels use the upper Gatling firing position relative to the whole gun mount; barrel-bundle rotation does not move that position. Whole-model rotation and mounting still apply.
+- Added decimal **Fire start delay s**, **0–10 seconds**. Releasing the trigger cancels the pending start. Simulation pause does not consume the delay; native firing cadence and Gatling spool-up remain active.
+- Moved custom stock-editor settings after position/rotation/optional size and before paint controls. Added curved Logic wires and clearer unselected/selected node contrast.
+- Reduced idle work in all three custom editors, bypassed native weapon/magazine checks for unrelated devices, reused CVT energy-frame storage, and retained the tested rocket-fuel/nozzle caches. Native physics frequency, aircraft control laws and energy correction are unchanged.
+
+The author confirmed the preceding test-series features in-game. The final performance changes passed automated boundary, numerical-equivalence and native-binding checks; **no new in-game FPS claim is made**. In an isolated 10,000-step CVT collection benchmark, the old path allocated **24,240,000 managed bytes**, while the reused production frame allocated **0 after warm-up**, with identical energy totals. This excludes native wrappers, game physics and graphics.
+
+Use **Airframe-Excelence-0.11.12.zip** for installation; install both its Parts and Mods contents in their respective locations. The separate matching **Source ZIP** includes GPL-3.0 source, build scripts, tests and authored asset tools. Keep only one combined mod DLL installed.
+
+Created by **Radio-Active1991**, with development, debugging and documentation assistance from **OpenAI ChatGPT / Codex**.
+
 ## 0.11.11 — Smoothing, formulas, suspension and performance
 
 - Added a **Smoothing** processing gate with configurable maximum change in units/second and an initial output. It limits changes in both directions using elapsed simulation time.

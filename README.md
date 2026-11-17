@@ -2,7 +2,7 @@
 
 Aircraft systems, propulsion, procedural wing devices and graphical controllers for **Flyout**.
 
-**Current release: 0.11.11** · **Flyout 0.2504** · **MelonLoader 0.7.1 Open-Beta** · **Windows x64 / .NET 6**
+**Current release: 0.11.12** · **Flyout 0.2504** · **MelonLoader 0.7.1 Open-Beta** · **Windows x64 / .NET 6**
 
 [Download the release](https://github.com/Radio-Active1991/Airframe-excelence/releases/latest) · [Read the Wiki](https://github.com/Radio-Active1991/Airframe-excelence/wiki) · [Report an issue](https://github.com/Radio-Active1991/Airframe-excelence/issues)
 
@@ -13,27 +13,28 @@ Aircraft systems, propulsion, procedural wing devices and graphical controllers 
 - **Sequence Controller:** timed ON/OFF sequences for custom axes, stock commands and supported turbine functions.
 - **Propulsion and drivetrain:** bleed jets, swiveling nozzles, compressed-air/hydraulic motors, CVT and a two-motor gearbox.
 - **Airframe systems:** fuel transfer, editable tanks, spring joints, linear servo, wing-edge/flap/dive-brake choices.
+- **Weapons:** configurable box magazine, extended stock Gun/Drum Mag ranges and firing controls.
 - **Engine options:** liquid rocket/RCS parts, up to 12 piston rows, Boxer and aligned radial layouts.
 
-The package contains **21 placeable parts**. Extra wing, turbine-nozzle and piston-layout choices are integrated into their stock editors. See the [Parts catalog](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Parts).
+The package contains **23 placeable parts**. Extra wing, turbine-nozzle and piston-layout choices are integrated into their stock editors. See the [Parts catalog](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Parts).
 
 ## Installation
 
-1. Close Flyout and download **Airframe-Excelence-0.11.11.zip** from Releases.
+1. Close Flyout and download **Airframe-Excelence-0.11.12.zip** from Releases.
 2. Copy the package's **Mods** contents into the game's **Mods** directory.
-3. Copy the 21 folders under **Parts** into:
+3. Copy the 23 folders under **Parts** into:
 
    `%USERPROFILE%\AppData\LocalLow\Stonext Games\Flyout\Mods\Parts`
 
-4. Start Flyout and check for **Airframe Excelence 0.11.11** in the log.
+4. Start Flyout and check for **Airframe Excelence 0.11.12** in the log.
 
 MelonLoader is installed separately. The game and user-data folders are different destinations: [full installation guide](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Installation).
 
-## New in 0.11.11
+## New in 0.11.12
 
-Build rate-limited commands with **Smoothing**, or enter four-input formulas in the new **Equation** gate. The graph editor checks formula syntax and compiles expressions before simulation. Existing graphs remain compatible.
+Build guided liquid-fuel missiles with the new **Missile RCS ring**, or configure ammunition capacity with **AE Box Magazine**. Stock Gun/Drum Mag caliber extends to **160 mm**; Gun fire rate reaches **15,000 RPM** and barrel length **10 m**. Twin/Gatling firing positions and a **0–10 second trigger-start delay** are included.
 
-Spring joints now offer real mass scaling, corrected asymmetric rotary stops and damping up to 1,000 in the displayed kN-based units. Snapshot caching, compiled graph dependencies and slower information-text refresh reduce repeated update work. The tested features were confirmed in-game; no new whole-game FPS result is claimed. See [Release notes](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Release-Notes), [Logic Processor](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Logic-Processor), [Joints and Servos](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Joints-and-Servos) and [Performance](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Performance-and-Compatibility).
+The Logic editor now has curved wires and clearer node contrast. Rocket fuel/drag handling, native magazine compatibility, fixed air system 0 and additional idle/CVT optimizations are included. The isolated CVT buffer benchmark allocated zero managed bytes after warm-up; a new game FPS gain has not been measured. Read [Release notes](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Release-Notes), [Weapons and Magazines](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Weapons-and-Magazines) and [Performance](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Performance-and-Compatibility).
 
 ## Documentation
 

@@ -1,0 +1,24 @@
+newmtl Case
+Kd 0.72 0.74 0.76
+Ks .4 .4 .4
+Ns 65
+d 1
+
+newmtl Trim
+Kd 0.16 0.18 0.2
+Ks .4 .4 .4
+Ns 65
+d 1
+
+newmtl Nozzle
+Kd 0.1 0.12 0.14
+Ks .4 .4 .4
+Ns 65
+d 1
+
+newmtl Plume
+Kd 0.55 0.72 1
+Ks .4 .4 .4
+Ns 65
+d 1
+
