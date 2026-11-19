@@ -1,5 +1,14 @@
 # Release notes
 
+## 0.11.13 — Radar inputs, Blinker and flare outputs
+
+- Added read-only **RWR radar detection**, **RWR lock warning**, **missile approach warning**, **own radar mode** and **STT target lock** inputs to both controllers. Individual mode inputs let sequences trigger on one exact mode.
+- Added the **Blinker** gate with a frequency of **0.01–100 Hz** and **0–100% duty cycle**. Each activation starts a cycle and disabling the input resets it.
+- Added **Flares / All dispensers** and per-launcher outputs to both controllers. Each rising edge or sequence step sends one pulse through Flyout's release functions. Use Blinker or separate timed sequence steps for repetition.
+- Added the manual single-pulse and timed-series wiring example to the English wiki.
+
+Download the runtime ZIP for installation. The separate Source ZIP contains the corresponding GPL-3.0 source and build tools. Use the SHA-256 file to verify either download.
+
 ## 0.11.12 — Missiles, magazines, weapon controls and performance
 
 - Added **AE Missile RCS**, a round missile module with 12 flush steering ports and short gas-jet effects. Pitch/yaw/roll force couples work at the nose or tail. Choose internal fuel, missile fuel, or missile fuel first with internal fallback.

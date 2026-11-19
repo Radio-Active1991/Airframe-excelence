@@ -2,14 +2,14 @@
 
 Aircraft systems, propulsion, procedural wing devices and graphical controllers for **Flyout**.
 
-**Current release: 0.11.12** · **Flyout 0.2504** · **MelonLoader 0.7.1 Open-Beta** · **Windows x64 / .NET 6**
+**Current release: 0.11.13** · **Flyout 0.2504** · **MelonLoader 0.7.1 Open-Beta** · **Windows x64 / .NET 6**
 
 [Download the release](https://github.com/Radio-Active1991/Airframe-excelence/releases/latest) · [Read the Wiki](https://github.com/Radio-Active1991/Airframe-excelence/wiki) · [Report an issue](https://github.com/Radio-Active1991/Airframe-excelence/issues)
 
 ## What is included?
 
 - **Stability Assist:** configurable hover/attitude/altitude/heading control, propulsion tuning, forward-speed modes and VTOL transition.
-- **Logic Processor:** graphical logic, math, PID, Smoothing, editable Equation formulas and device control; 15 processing gates, 64 additional inputs and 3 outputs per box.
+- **Logic Processor:** graphical logic, math, PID, Smoothing, Blinker, editable Equation formulas and device control; 15 processing gates, 64 additional inputs and 3 outputs per box.
 - **Sequence Controller:** timed ON/OFF sequences for custom axes, stock commands and supported turbine functions.
 - **Propulsion and drivetrain:** bleed jets, swiveling nozzles, compressed-air/hydraulic motors, CVT and a two-motor gearbox.
 - **Airframe systems:** fuel transfer, editable tanks, spring joints, linear servo, wing-edge/flap/dive-brake choices.
@@ -20,21 +20,21 @@ The package contains **23 placeable parts**. Extra wing, turbine-nozzle and pist
 
 ## Installation
 
-1. Close Flyout and download **Airframe-Excelence-0.11.12.zip** from Releases.
+1. Close Flyout and download **Airframe-Excelence-0.11.13.zip** from Releases.
 2. Copy the package's **Mods** contents into the game's **Mods** directory.
 3. Copy the 23 folders under **Parts** into:
 
    `%USERPROFILE%\AppData\LocalLow\Stonext Games\Flyout\Mods\Parts`
 
-4. Start Flyout and check for **Airframe Excelence 0.11.12** in the log.
+4. Start Flyout and check for **Airframe Excelence 0.11.13** in the log.
 
 MelonLoader is installed separately. The game and user-data folders are different destinations: [full installation guide](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Installation).
 
-## New in 0.11.12
+## New in 0.11.13
 
-Build guided liquid-fuel missiles with the new **Missile RCS ring**, or configure ammunition capacity with **AE Box Magazine**. Stock Gun/Drum Mag caliber extends to **160 mm**; Gun fire rate reaches **15,000 RPM** and barrel length **10 m**. Twin/Gatling firing positions and a **0–10 second trigger-start delay** are included.
+The Logic Processor and Sequence Controller can read RWR warnings and the aircraft's own radar mode and lock. Both can send single pulses to all flare dispensers or to an individual launcher. The Logic Processor's **Blinker** adds adjustable frequency and duty cycle.
 
-The Logic editor now has curved wires and clearer node contrast. Rocket fuel/drag handling, native magazine compatibility, fixed air system 0 and additional idle/CVT optimizations are included. The isolated CVT buffer benchmark allocated zero managed bytes after warm-up; a new game FPS gain has not been measured. Read [Release notes](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Release-Notes), [Weapons and Magazines](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Weapons-and-Magazines) and [Performance](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Performance-and-Compatibility).
+The wiki shows how to use the native inputs and build a manual series that stops automatically. [Radar, RWR and Flare Outputs](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Radar-RWR-and-Flare-Outputs)
 
 ## Documentation
 
