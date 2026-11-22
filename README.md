@@ -21,7 +21,15 @@ The package contains **23 placeable parts**. Extra wing, turbine-nozzle and pist
 
 ## Installation
 
-Close Flyout and download **Airframe-Excelence-0.11.14.zip** from Releases. Open the ZIP directly in **Flyout Mod Installer** and choose **Install / Update**. Its [manifest](flyout-mod.json) maps the game files and the 23 part folders to their respective destinations.
+### Install with Flyout Mod Installer
+
+1. Download [FlyoutModInstaller.exe](https://github.com/Radio-Active1991/Airframe-excelence/raw/refs/heads/main/FlyoutModInstaller.exe) and [Airframe-Excelence-0.11.14.zip](https://github.com/Radio-Active1991/Airframe-excelence/releases/download/v0.11.14/Airframe-Excelence-0.11.14.zip).
+2. Close Flyout and run the installer on Windows 10 or 11 with .NET Framework 4.8.
+3. Click **Open ZIP...** and select the downloaded mod ZIP. Check the game and user folders, then choose **Install / Update**.
+
+The [package manifest](flyout-mod.json) tells the installer where to copy the game files and 23 part folders.
+
+### Install manually
 
 For manual installation, copy the contents of `Mods` into the game's `Mods` folder. Copy the contents of `Parts` into `%USERPROFILE%\AppData\LocalLow\Stonext Games\Flyout\Mods\Parts`. After starting Flyout, look for **Airframe Excelence 0.11.14** in the log.
 
