@@ -2,7 +2,7 @@
 
 Aircraft systems, propulsion, procedural wing devices and graphical controllers for **Flyout**.
 
-**Current release: 0.11.13** · **Flyout 0.2504** · **MelonLoader 0.7.1 Open-Beta** · **Windows x64 / .NET 6**
+**Current release: 0.11.14** · **Flyout 0.2504** · **MelonLoader 0.7.3 Open-Beta** · **Windows x64 / .NET 6**
 
 [Download the release](https://github.com/Radio-Active1991/Airframe-excelence/releases/latest) · [Read the Wiki](https://github.com/Radio-Active1991/Airframe-excelence/wiki) · [Report an issue](https://github.com/Radio-Active1991/Airframe-excelence/issues)
 
@@ -13,6 +13,7 @@ Aircraft systems, propulsion, procedural wing devices and graphical controllers 
 - **Sequence Controller:** timed ON/OFF sequences for custom axes, stock commands and supported turbine functions.
 - **Propulsion and drivetrain:** bleed jets, swiveling nozzles, compressed-air/hydraulic motors, CVT and a two-motor gearbox.
 - **Airframe systems:** fuel transfer, editable tanks, spring joints, linear servo, wing-edge/flap/dive-brake choices.
+- **Surface finishes** for wings and editable fuselages in the stock Material Type menu.
 - **Weapons:** configurable box magazine, extended stock Gun/Drum Mag ranges and firing controls.
 - **Engine options:** liquid rocket/RCS parts, up to 12 piston rows, Boxer and aligned radial layouts.
 
@@ -20,21 +21,15 @@ The package contains **23 placeable parts**. Extra wing, turbine-nozzle and pist
 
 ## Installation
 
-1. Close Flyout and download **Airframe-Excelence-0.11.13.zip** from Releases.
-2. Copy the package's **Mods** contents into the game's **Mods** directory.
-3. Copy the 23 folders under **Parts** into:
+Close Flyout and download **Airframe-Excelence-0.11.14.zip** from Releases. Open the ZIP directly in **Flyout Mod Installer** and choose **Install / Update**. Its [manifest](flyout-mod.json) maps the game files and the 23 part folders to their respective destinations.
 
-   `%USERPROFILE%\AppData\LocalLow\Stonext Games\Flyout\Mods\Parts`
-
-4. Start Flyout and check for **Airframe Excelence 0.11.13** in the log.
+For manual installation, copy the contents of `Mods` into the game's `Mods` folder. Copy the contents of `Parts` into `%USERPROFILE%\AppData\LocalLow\Stonext Games\Flyout\Mods\Parts`. After starting Flyout, look for **Airframe Excelence 0.11.14** in the log.
 
 MelonLoader is installed separately. The game and user-data folders are different destinations: [full installation guide](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Installation).
 
-## New in 0.11.13
+## New in 0.11.14
 
-The Logic Processor and Sequence Controller can read RWR warnings and the aircraft's own radar mode and lock. Both can send single pulses to all flare dispensers or to an individual launcher. The Logic Processor's **Blinker** adds adjustable frequency and duty cycle.
-
-The wiki shows how to use the native inputs and build a manual series that stops automatically. [Radar, RWR and Flare Outputs](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Radar-RWR-and-Flare-Outputs)
+The stock **Material Type** menu now includes nine Airframe Excelence finishes, from tread plate and brushed metal to leather, velour and ceramics. Perforated metal has see-through openings using Flyout's Mesh shader. [Surface Finishes guide](https://github.com/Radio-Active1991/Airframe-excelence/wiki/Surface-Finishes)
 
 ## Documentation
 

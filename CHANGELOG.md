@@ -1,5 +1,12 @@
 # Release notes
 
+## 0.11.14 — Surface finishes and installer support
+
+- Added nine finishes to the stock **Material Type** menu on wings and editable fuselages. Choose tread plate, brushed metal, perforated metal, pebbled leather, velour, technical ceramic, ceramic floor tile, cork or foam rubber.
+- Perforated metal uses the stock Mesh shader with a round-hole cutout mask. Existing perforated metal selections from the test builds are migrated when loaded.
+- Each material group stores its own finish. Existing tread plate saves are supported.
+- The runtime ZIP includes `flyout-mod.json` for Flyout Mod Installer.
+
 ## 0.11.13 — Radar inputs, Blinker and flare outputs
 
 - Added read-only **RWR radar detection**, **RWR lock warning**, **missile approach warning**, **own radar mode** and **STT target lock** inputs to both controllers. Individual mode inputs let sequences trigger on one exact mode.

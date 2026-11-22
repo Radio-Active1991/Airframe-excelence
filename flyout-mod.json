@@ -1,0 +1,19 @@
+{
+  "formatVersion": 1,
+  "id": "airframe-excelence",
+  "name": "Airframe Excelence",
+  "version": "0.11.14",
+  "description": "Aircraft systems, propulsion, graphical controllers and surface finishes for Flyout.",
+  "install": [
+    {
+      "source": "Mods",
+      "target": "game",
+      "destination": "Mods"
+    },
+    {
+      "source": "Parts",
+      "target": "localLow",
+      "destination": "Mods/Parts"
+    }
+  ]
+}
